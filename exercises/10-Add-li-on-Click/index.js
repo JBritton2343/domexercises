@@ -4,7 +4,8 @@ button.addEventListener("click", function() {
 	addElement = function(){
 	let ul = document.getElementById("#myList");
 	let li = document.createElement("li");
-	li.appendChild(document.createTextNode("Fourth Element"));
+	let child = ul.children.length+1;
+	li.appendChild(document.createTextNode("Fourth Element"+child));
 	ul.appendChild(li);
 	}
 });
