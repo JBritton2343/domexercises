@@ -6,3 +6,5 @@ for (let i = 0; i < countries.length, i++){
     selected.textContent(countries[i]);
     mySelect.appendChild(selected);
 }
+mySelect.addEventListener("change", fuction())
+    alert(mySelect.selected);
