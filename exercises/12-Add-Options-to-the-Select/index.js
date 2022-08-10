@@ -8,5 +8,7 @@ for(let i = 0; i < countries.length; i++){
         selections.value = countries[i];
         mySelect.appendChild(selections);
 }};
-mySelect.addEventListener("change", fuction())
-    alert(mySelect.selected);
+mySelect.addEventListener("change", ()=>{
+    alert(this.value)
+})
+    
