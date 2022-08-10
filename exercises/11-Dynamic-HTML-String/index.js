@@ -1,5 +1,5 @@
 let myString = "<p>Hello!</p> <p><strong>My friend</strong> we are in the year </p>"
 let date = new Date();
 let year = date.getFullYear();
-let string2 = myString.concat(year).trimStart
+let string2 = myString.concat(year)
 document.write(string2);
