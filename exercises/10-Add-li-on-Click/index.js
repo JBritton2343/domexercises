@@ -1,5 +1,5 @@
 let button = document.querySelector("#superDuperButton");
-let ul = document.querySelector('myList')
+let ul = document.querySelector('#myList')
 button.addEventListener("click", function() {
 	//your code here
 	
