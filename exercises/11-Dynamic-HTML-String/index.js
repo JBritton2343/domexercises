@@ -1,4 +1,6 @@
-let myString = "<p>Hello!</p> <strong>My friend</strong> <p>we are in the year </p>";
-let year = Date.prototype.getFullYear();
-let myNewString = myString.concat(year);
-document.write(myNewString);
+let myString = "<p>Hello!</p> <strong>My friend</strong> <p>we are in the year </p>"
+const currentDate = date();
+const year = currentDate.getFullYear()
+myString.concat(year) 
+
+document.write(myString);
