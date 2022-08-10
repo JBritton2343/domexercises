@@ -2,10 +2,11 @@ let countries = ["USA", "France", "Italy", "Brazil", "Colombia", "Belize", "Vene
 // your code here
 let mySelect = document.getElementById("mySelect");
 for(let i = 0; i < countries.length; i++){
-    let select = document.createElement("option");
-    select.textContent(countries[i]);
-    select.value = countries[i];
-    mySelect.appendChild(select);
-};
+    if(mySelect.querySelectorAll('option[value="' + arr[i] + "\"]").length == 0) {
+        let selections = document.createElement("option");
+        selections.textContent = countries[i];
+        selections.value = countries[i];
+        mySelect.appendChild(selections);
+}};
 mySelect.addEventListener("change", fuction())
     alert(mySelect.selected);
