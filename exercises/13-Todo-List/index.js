@@ -4,7 +4,7 @@
 let rToDo = document.querySelectorAll(".fa-trash");
 rToDo.forEach(element => {
     element.addEventListener("click", (e)=>{
-        e.parentNode.removeChild(e)
+       e.currentTarget.parentNode.parentNode.remove()
     })
 });
 
