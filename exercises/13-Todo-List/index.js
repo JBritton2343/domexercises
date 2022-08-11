@@ -16,12 +16,11 @@ addToDo.addEventListener("keypress", (enter)=>{
     if(enter.key == "Enter"){
         let newSpan = document.createElement("span");
         let newLi = document.createElement("li");
-    
-    let newI = document.createElement("i");
-    newI.classList.add("fa","fa-trash");
-    newSpan.appendChild(newI);
-    newLi.appendChild(newSpan);
-    ul.appendChild(newLi);
-    newLi.innerHTML=addToDo.value;
+        let newI = document.createElement("i");
+        newI.classList.add("fa","fa-trash");
+        newSpan.appendChild(newI);
+        newLi.appendChild(newSpan);
+         ul.appendChild(newLi);
+        newLi.insertAdjacentHTML("beforeend",addToDo.value);
     }
 })
