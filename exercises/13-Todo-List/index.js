@@ -14,11 +14,14 @@ let addToDo = document.getElementById("addToDo");
 let ul = document.querySelector("ul");
 addToDo.addEventListener("keypress", (enter)=>{
     if(enter.key == "Enter"){
+        let newSpan = document.createElement("span");
+        
         let newLi = document.createElement("li")
     newLi.innerHTML=addToDo.value;
     let newI = document.createElement("i");
     newI.classList.add("fa","fa-trash");
-    newLi.appendChild(newI);
+    newSpan.appendChild(newI);
+    newLi.appendChild(newSpan);
     ul.appendChild(newLi);
     }
 })
